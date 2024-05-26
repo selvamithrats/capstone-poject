@@ -53,3 +53,14 @@ h1 {
     border: 1px solid #d6d8db;
     border-radius: 4px;
 }
+.emergency-contact, .track {
+    margin-top: 20px;
+    text-align: center;
+}
+.track a {
+    color: #007bff;
+    text-decoration: none;
+}
+.track a:hover {
+    text-decoration: underline;
+}
