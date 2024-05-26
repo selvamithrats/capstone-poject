@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Disaster Relief Platform</h1>
+        <form id="reliefForm">
+            <div class="form-group">
+                <label for="need">What do you need?</label>
+                <select id="need" required>
+                    <option value="">Select an option</option>
+                    <option value="food">Food</option>
+                    <option value="water">Water</option>
+                    <option value="clothes">Clothes</option>
+                    <option value="infant-needs">Infant Needs (diapers, powder milk)</option>
+                    <option value="medicines">Medicines</option>
+                    <option value="old-age-medicines">Old Age Medicines (diabetes, blood pressure, thyroid)</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Your address" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Provide any additional details" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit Request</button>
+            </div>
+        </form>
+        <div id="notificationArea" class="notification" style="display: none;">
+            <p>Your request has been submitted and resource providers have been notified.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
